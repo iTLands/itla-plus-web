@@ -1,0 +1,133 @@
+---
+import Download from '../icons/download.astro';
+import GitHub from '../icons/github.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <main class="max-w-6xl mx-auto px-6 sm:px-8 py-8">
+
+    <!-- Hero Section -->
+    <section class="relative w-full flex flex-col justify-center items-center min-h-[90vh] text-center">
+      <img src="/itla-plus.png" class="w-44 h-44 mb-6 drop-shadow-[0_0_15px_rgba(250,227,172,0.3)]" alt="ITLA Plus Logo"/>
+
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-white mb-6 tracking-tight">
+        Potencia tu experiencia en el <span class="text-primary">ITLA</span>
+      </h1>
+
+      <p class="text-neutral-300 text-lg max-w-2xl leading-relaxed mb-10">
+        Una suite de productividad creada para el entorno ITLA, con automatizaciones, integraciones y utilidades que se adaptan a ti.  
+        <span class="text-primary/80">Rápida, flexible y de confianza.</span>
+      </p>
+
+      <div class="flex flex-wrap justify-center items-center gap-4">
+        <a
+          class="group px-5 py-3 border border-primary rounded-lg text-sm flex items-center gap-2 hover:bg-primary hover:text-black transition"
+          href="https://github.com/JosueIsOffline/itla-plus/releases/latest/download/itla-plus.user.js"
+          target="_blank"
+          download
+        >
+          <Download class="w-4 h-4 text-primary group-hover:text-black transition"/>
+          <span>Descargar Script</span>
+        </a>
+
+        <a
+          class="group px-5 py-3 border border-primary rounded-lg text-sm flex items-center gap-2 hover:bg-primary hover:text-black transition"
+          href="https://github.com/JosueIsOffline/itla-plus"
+          target="_blank"
+        >
+          <GitHub class="w-4 h-4 text-primary group-hover:text-black transition"/>
+          <span>Ver en GitHub</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="w-full py-28 flex flex-col items-center text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">Mira ITLA Plus en acción</h2>
+      <p class="text-neutral-300 mb-10 max-w-2xl">
+        Observa cómo las automatizaciones y herramientas se integran directamente con la plataforma ITLA.
+      </p>
+
+      <div class="relative w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-[0_0_25px_rgba(250,227,172,0.1)] border border-primary/30">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/qcJ3fqWT3a0"
+          title="Demo de ITLA Plus"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Plugins Section -->
+    <section class="w-full py-28 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-10">Plugins incluidos</h2>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
+        <div class="border border-primary/20 rounded-xl p-6 bg-[#1b1b25]/60 backdrop-blur-sm hover:bg-primary/10 transition-all shadow-[0_0_15px_rgba(250,227,172,0.05)]">
+          <h3 class="text-lg font-semibold text-white mb-2">AutoLogin</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">
+            Inicia sesión automáticamente en la plataforma ITLA y evita pasos repetitivos.
+          </p>
+        </div>
+
+        <div class="border border-primary/20 rounded-xl p-6 bg-[#1b1b25]/60 backdrop-blur-sm hover:bg-primary/10 transition-all shadow-[0_0_15px_rgba(250,227,172,0.05)]">
+          <h3 class="text-lg font-semibold text-white mb-2">Course Points Tracker</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">
+            Monitorea tus calificaciones y progreso académico en tiempo real, sin esfuerzo.
+          </p>
+        </div>
+
+        <div class="border border-primary/20 rounded-xl p-6 bg-[#1b1b25]/60 backdrop-blur-sm hover:bg-primary/10 transition-all shadow-[0_0_15px_rgba(250,227,172,0.05)]">
+          <h3 class="text-lg font-semibold text-white mb-2">Export Assignments</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">
+            Sincroniza tus asignaciones directamente con Google Calendar y recibe recordatorios automáticos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comunidad & Apoyo Section -->
+    <section class="py-32 text-center border-t border-primary/20">
+      <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-6">Forma parte de la comunidad</h2>
+      <p class="text-neutral-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+        ITLA Plus es un proyecto abierto, creado por y para estudiantes.  
+        Puedes contribuir con código, ideas o simplemente apoyando el desarrollo con una ⭐ en GitHub.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <a
+          href="https://github.com/JosueIsOffline/itla-plus"
+          target="_blank"
+          class="inline-flex items-center justify-center gap-2 px-5 py-3 border border-primary rounded-lg text-sm font-medium hover:bg-primary hover:text-black transition"
+        >
+          <GitHub class="w-4 h-4 text-primary group-hover:text-black transition"/>
+          <span>Dar una ⭐ en GitHub</span>
+        </a>
+
+        <a
+          href="https://github.com/JosueIsOffline/itla-plus"
+          target="_blank"
+          class="inline-flex items-center justify-center gap-2 px-5 py-3 border border-primary rounded-lg text-sm font-medium hover:bg-primary hover:text-black transition"
+        >
+          <span>Contribuir al proyecto</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-primary/20 text-center text-sm text-neutral-500">
+      <p class="mb-2">
+        © 2025 <span class="text-primary font-semibold">ITLA Plus</span> — Proyecto abierto desarrollado por la comunidad ITLA.
+      </p>
+      <div class="flex justify-center gap-4 text-primary">
+        <a href="/terms" class="hover:underline">Términos de uso</a>
+        <span>•</span>
+        <a href="/privacy" class="hover:underline">Política de privacidad</a>
+      </div>
+    </footer>
+
+  </main>
+</Layout>
+
